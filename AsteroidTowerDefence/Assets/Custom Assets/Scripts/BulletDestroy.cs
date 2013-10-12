@@ -1,19 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TurretRotate : MonoBehaviour {
+public class BulletDestroy : MonoBehaviour {
 	
-	public int rotSpeed = 20;
 	
 	// Use this for initialization
 	void Start () {
-	
+		Destroy(gameObject, 3);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown ("Fire1")){
-			transform.Rotate(new Vector3(0,0,1) * rotSpeed);
-		}
+	
+		
+		
 	}
 }
