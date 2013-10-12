@@ -19,6 +19,11 @@
 [Oo]bjects
 [Tt]emp*
 
+*dll*
+*pidb*
+*pdb
+*exe
+
 
 #################
 ## Eclipse
