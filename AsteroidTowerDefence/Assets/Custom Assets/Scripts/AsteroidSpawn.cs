@@ -23,7 +23,8 @@ public class AsteroidSpawn : MonoBehaviour {
 											 SpawnPoint[spawn].position,
 											 SpawnPoint[spawn].rotation) as Rigidbody;
 			
-			instance.AddForce(SpawnPoint[spawn].right * -Random.Range(50,500));
+			
+			instance.AddForce(Vector3.right * -Random.Range(50,500));
 			
 		}
 	}
