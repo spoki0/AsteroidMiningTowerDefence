@@ -12,6 +12,6 @@ public class RotateAround : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.RotateAround(parent.position, new Vector3(0,0,1), Time.deltaTime * 10);
+		transform.RotateAround(parent.position, new Vector3(0,0,1), Time.deltaTime * 20);
 	}
 }
