@@ -15,10 +15,9 @@ public class TurretShoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		Rigidbody instance = Instantiate(bullet,
-										 BarrelSpawn.position,
-										 BarrelSpawn.rotation) as Rigidbody;
+		Rigidbody bulletClone = (Rigidbody) Instantiate(bullet, BarrelSpawn.position, BarrelSpawn.rotation);
 		
-		instance.AddForce(BarrelSpawn.forward * 10);
+		bulletClone.velocity = BarrelSpawn.forward * BulletSpeed;
+		
 	}
 }
